@@ -44,6 +44,8 @@ function ieee754aBinario(numero) {
     
 	//Sacamos la mantisa
     var mantisa = (numero_binario.replace(".", "")).substring(1, numero_binario.length);
+    mantisa = mantisa.substring(0, 23);
+
     
     //Devolvemos el resultado
     var resultado = signo + " " + exponente + " " + mantisa;
